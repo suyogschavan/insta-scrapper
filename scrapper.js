@@ -12,8 +12,8 @@ async function startAutomation() {
     let passwordInput = await driver.findElement(By.name("password"));
     let submitbtn = await driver.findElement(By.css("[type='submit']"));
 
-    await usernameInput.sendKeys("8261821410");
-    await passwordInput.sendKeys("Another#2003");
+    await usernameInput.sendKeys("suyog.scoe.comp@gmail.com");
+    await passwordInput.sendKeys("Another#2003");~
     await submitbtn.click();
 
     let profilePic = await driver.wait(
@@ -106,9 +106,9 @@ async function startAutomation() {
   } catch (err) {
     console.log(err);
   }
-  //   finally {
-  //     await driver.quit();
-  //   }
+    finally {
+      await driver.quit();
+    }
 }
 
 startAutomation();
